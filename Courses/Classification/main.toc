@@ -1,0 +1,12 @@
+\select@language {english}
+\beamer@sectionintoc {1}{Model based approaches for classification}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Bayes Classifier}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Linear/Quadratic Discriminant Analysis}{9}{0}{1}
+\beamer@sectionintoc {2}{Model free approaches for classification}{27}{0}{2}
+\beamer@subsectionintoc {2}{1}{K Nearest Neighbors (K-NN)}{28}{0}{2}
+\beamer@subsectionintoc {2}{2}{Support Vector Machine (SVM)}{32}{0}{2}
+\beamer@subsectionintoc {2}{3}{Random Forests}{55}{0}{2}
+\beamer@sectionintoc {3}{Model Selection and Model Assessment}{65}{0}{3}
+\beamer@subsectionintoc {3}{1}{Introduction}{66}{0}{3}
+\beamer@subsectionintoc {3}{2}{Cross-validation}{70}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{73}{0}{4}

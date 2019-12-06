@@ -1,0 +1,164 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Model based approaches for classification}{3}{Model based approaches for classification}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Bayes Classifier}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Bayes Classifier}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{2}{5/5}{Bayes Classifier}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{1}{3}{6/6}{Bayes Classifier}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{4}{7/7}{Bayes Classifier}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{1}{5}{8/8}{Bayes Classifier}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Linear/Quadratic Discriminant Analysis}}\headcommand {\beamer@subsectionpages {4}{8}}
+\headcommand {\slideentry {1}{2}{1}{9/9}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{2}{2}{10/10}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {1}{2}{3}{11/12}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {11}{12}}
+\headcommand {\slideentry {1}{2}{4}{13/13}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {1}{2}{5}{14/14}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{2}{6}{15/15}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {1}{2}{7}{16/16}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {1}{2}{8}{17/18}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\slideentry {1}{2}{9}{19/19}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {1}{2}{10}{20/20}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {1}{2}{11}{21/21}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {1}{2}{12}{22/23}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {22}{23}}
+\headcommand {\slideentry {1}{2}{13}{24/24}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {1}{2}{14}{25/25}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {1}{2}{15}{26/26}{Linear/Quadratic Discriminant Analysis}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\sectionentry {2}{Model free approaches for classification}{27}{Model free approaches for classification}{0}}
+\headcommand {\beamer@sectionpages {3}{26}}
+\headcommand {\beamer@subsectionpages {9}{26}}
+\headcommand {\slideentry {2}{0}{1}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{28}{K Nearest Neighbors (K-NN)}}\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\slideentry {2}{1}{1}{28/28}{K Nearest Neighbors (K-NN)}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {2}{1}{2}{29/29}{K Nearest Neighbors (K-NN)}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {2}{1}{3}{30/30}{K Nearest Neighbors (K-NN)}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {2}{1}{4}{31/31}{K Nearest Neighbors (K-NN)}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{32}{Support Vector Machine (SVM)}}\headcommand {\beamer@subsectionpages {28}{31}}
+\headcommand {\slideentry {2}{2}{1}{32/32}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {2}{2}{2}{33/33}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {2}{2}{3}{34/34}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {2}{2}{4}{35/35}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {2}{2}{5}{36/36}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {2}{2}{6}{37/37}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {2}{2}{7}{38/38}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {2}{2}{8}{39/39}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {2}{2}{9}{40/40}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {2}{2}{10}{41/41}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {2}{2}{11}{42/42}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {2}{2}{12}{43/43}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {2}{2}{13}{44/44}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {2}{2}{14}{45/45}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {2}{2}{15}{46/46}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {2}{2}{16}{47/47}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {2}{2}{17}{48/48}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {2}{2}{18}{49/49}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {2}{2}{19}{50/50}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {2}{2}{20}{51/51}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {2}{2}{21}{52/52}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {2}{2}{22}{53/53}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {2}{2}{23}{54/54}{Support Vector Machine (SVM)}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{55}{Random Forests}}\headcommand {\beamer@subsectionpages {32}{54}}
+\headcommand {\slideentry {2}{3}{1}{55/55}{Random Forests}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {2}{3}{2}{56/56}{Random Forests}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {2}{3}{3}{57/60}{Random Forests}{0}}
+\headcommand {\beamer@framepages {57}{60}}
+\headcommand {\slideentry {2}{3}{4}{61/61}{Random Forests}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {2}{3}{5}{62/62}{Random Forests}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {2}{3}{6}{63/63}{Random Forests}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {2}{3}{7}{64/64}{Random Forests}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\sectionentry {3}{Model Selection and Model Assessment}{65}{Model Selection and Model Assessment}{0}}
+\headcommand {\beamer@sectionpages {27}{64}}
+\headcommand {\beamer@subsectionpages {55}{64}}
+\headcommand {\slideentry {3}{0}{1}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{66}{Introduction}}\headcommand {\beamer@subsectionpages {65}{65}}
+\headcommand {\slideentry {3}{1}{1}{66/66}{Introduction}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {3}{1}{2}{67/67}{Introduction}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {3}{1}{3}{68/69}{Introduction}{0}}
+\headcommand {\beamer@framepages {68}{69}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{70}{Cross-validation}}\headcommand {\beamer@subsectionpages {66}{69}}
+\headcommand {\slideentry {3}{2}{1}{70/70}{Cross-validation}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {3}{2}{2}{71/71}{Cross-validation}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {3}{2}{3}{72/72}{Cross-validation}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\sectionentry {4}{Conclusions}{73}{Conclusions}{0}}
+\headcommand {\beamer@sectionpages {65}{72}}
+\headcommand {\beamer@subsectionpages {70}{72}}
+\headcommand {\slideentry {4}{0}{1}{73/73}{}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {4}{0}{2}{74/74}{}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\slideentry {4}{0}{3}{75/75}{}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\slideentry {4}{0}{4}{76/76}{}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\slideentry {4}{0}{5}{77/77}{}{0}}
+\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\beamer@partpages {1}{77}}
+\headcommand {\beamer@subsectionpages {73}{77}}
+\headcommand {\beamer@sectionpages {73}{77}}
+\headcommand {\beamer@documentpages {77}}
+\headcommand {\def \inserttotalframenumber {56}}

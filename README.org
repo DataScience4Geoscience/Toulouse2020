@@ -1,0 +1,3 @@
+Materials for the doctoral course [[https://dsg2018.wordpress.com/][Data Science for Geosciences]]
+
+Authors: F. Chatelain, L. Drumetz, Mauro Dalla Mura, R. Fablet, M. Fauvel, P. Tandeo

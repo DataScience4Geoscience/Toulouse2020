@@ -1,0 +1,163 @@
+\documentclass[pressentation,9pt,aspectratio=1610,xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage{etex}
+\usepackage{minted}\usemintedstyle{emacs}
+\usepackage{pifont}\usepackage{booktabs}
+\usepackage{collcell}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{mathspec}
+\usepackage{cancel}
+\usepackage{pgfplots,pgfplotstable}
+\usetikzlibrary{mindmap,trees,shapes,arrows,spy,3d,backgrounds,positioning,pgfplots.statistics,calc,fit,overlay-beamer-styles, decorations.markings,matrix}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{/pgf/number format/assume math mode=true}
+
+% \defaultfontfeatures{Ligatures=TeX}\setmathsfont(Digits,Latin,Greek)[BoldFont=Fira Sans Bold]{Fira Sans Book}
+
+\renewenvironment{description}{\begin{itemize}}{\end{itemize}}
+\usepackage[type={CC}, modifier={by-sa}, version={4.0},]{doclicense}
+\usetheme{metropolis}
+\usecolortheme[snowy]{owl}
+\metroset{progressbar=frametitle,numbering=fraction,titleformat=smallcaps,block=fill,sectionpage=simple,subsectionpage=simple}
+\setbeamercovered{again covered={\opaqueness<1->{25}}}
+
+% Documents info
+\title{Data Science for Geosciences}
+\subtitle{Data classification}
+\author{Florent Chatelain \inst{1} \and Mathieu Fauvel \inst{2}}
+\institute{
+  \inst{1} MCF Grenoble INP, GIPSA-lab \and %
+  \inst{2} CR1 INRA, CESBIO
+}
+\date{14-18 January 2019\\Brest France}
+\setbeamertemplate{footline}
+{%
+\leavevmode%
+\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+\usebeamerfont{author in head/foot}\insertshortauthor: \insertshorttitle
+\hfill%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+\usebeamerfont{title in head/foot}\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+\setbeamercolor{lowcol}{fg=black,bg=gray!05}
+\setbeamertemplate{blocks}[rounded][shadow=false,lower=lowcol]
+\setbeamersize{text margin left  = 0.5cm}
+\setbeamersize{text margin right = 0.5cm}
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subsubitem}{$\star$}
+\setbeamertemplate{navigation symbols}{}
+
+% les macros
+\newcommand{\exampletext}[1]{{\textcolor{green}{#1}}}
+\newcommand{\structuretext}[1]{{\textcolor{blue}{#1}}}
+
+\newcommand{\bydef}{\stackrel{{def}}{=}}
+\newcommand{\ici}{\tcb{$\blacktriangleright \;$}}
+\newcommand{\icir}{\alert{$\blacktriangleright \;$}}
+\newcommand{\iciex}{\exampletext{$\blacktriangleright \;$}}
+\usepackage{pifont}
+\newcommand{\doigt}{\noindent \Pisymbol{pzd}{43}}
+\newcommand{\doigtr}{\alert{\noindent \Pisymbol{pzd}{43}}}
+\newcommand{\doigtex}{{\exampletext{\noindent \Pisymbol{pzd}{43}}}}
+
+\newcommand{\bx}{{\boldsymbol{x}}}
+\newcommand{\bbeta}{{\boldsymbol{\beta}}}
+\newcommand{\balpha}{{\boldsymbol{\alpha}}}
+\newcommand{\bxi}{{\boldsymbol{\xi}}}
+
+
+
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\logit}{logit}
+\DeclareMathOperator{\sign}{sign}
+
+
+% Set graph path
+\graphicspath{{./Figs/Intro/}{./Figs/ModelBased/}{./Figs/Discriminative/}{./Figs/FE}}
+
+\definecolor{c1}{rgb}{0,0,0.562}
+\definecolor{c2}{rgb}{0,0,0.875}
+\definecolor{c3}{rgb}{0,0.25,1}
+\definecolor{c4}{rgb}{0,0.625,1}
+\definecolor{c5}{rgb}{0,1,1}
+\definecolor{c6}{rgb}{0.375,1,0.625}
+\definecolor{c7}{rgb}{0.688,1,0.312}
+\definecolor{c8}{rgb}{1,0.938,0}
+\definecolor{c9}{rgb}{1,0.562,0}
+\definecolor{c10}{rgb}{1,0.188,0}
+\definecolor{c11}{rgb}{0.812,0,0}
+\definecolor{c12}{rgb}{0.5,0,0}
+
+
+\begin{document}
+\maketitle
+\pgfplotsset{compat=newest}
+
+\begin{frame}
+  \frametitle{The presenters}
+  \begin{block}{Florent Chatelain}
+    \begin{itemize}
+    \item Ph.D. degree in signal processing from the National Polytechnic Institute, Toulouse, France, in 2007
+    \item Post-doc position at INRIA - ARIANA Team, 2007-2008
+    \item Since 2008, Associate Professor at GIPSA-Lab, University of Grenoble, France.
+    \item Research interests are centered around estimation, detection and large scale inference
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Mathieu Fauvel}
+    \begin{itemize}
+    \item Ph.D. degree in signal and image processing from the National Polytechnic Institute, Grenoble, France, and the University of Iceland, in 2007
+    \item Post-doc position at INRIA - MISTIS Team, 2008-2010
+    \item Assistant Professor (Grenoble, 2007-2008 \& Toulouse, 2010-2011)
+    \item Associate Professor at DYNAFOR, National Polytechnic Institute, Toulouse, between 2011-2018.
+    \item Since 2018, Research (CR1) at CESBIO, INRA.
+    \item Research interests are: machine learning for environmental/ecological monitoring
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Model based approaches for classification}
+\include{modelBased}
+
+\section{Model free approaches for classification}
+\include{modelFree}
+
+\section{Model Selection and Model Assessment}
+\include{modelAssessment}
+
+\section{Conclusions}
+\include{conclusions}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+%%% latexmk -xelatex -shell-escape presentation_fauvel.tex
