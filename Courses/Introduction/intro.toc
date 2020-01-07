@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \beamer@sectionintoc {1}{What is machine learning?}{3}{0}{1}
 \beamer@sectionintoc {2}{Examples}{14}{0}{2}
 \beamer@sectionintoc {3}{Basics}{22}{0}{3}
