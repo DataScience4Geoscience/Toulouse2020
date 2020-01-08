@@ -418,7 +418,7 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
     \end{block}
 
    \begin{center}
-      \includegraphics[width=.55\textwidth]{nonsep_svm_pb.pdf}
+      \includegraphics[width=.45\textwidth]{nonsep_svm_pb.pdf}
    \end{center}
      \begin{itemize}
       \item[\doigtr] we can soften what we mean by ``separates''
@@ -586,7 +586,7 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 \begin{itemize}
    \item Choice of a transformed space  $\mathcal{F}$ (expansion space) where
    the linear separation assumption is more relevant
-   \item Nonlinear expansion map $\phi~: \mathbb{R}^p \rightarrow \mathcal{F} $, $\bx\mapsto \phi(\bx)\leftarrow$ enlarged features
+   \item Nonlinear expansion map $\phi~: \mathbb{R}^p \rightarrow \mathcal{F} $, $\bx\mapsto \phi(\bx)$ (enlarged features)
 \end{itemize}
 
 
@@ -805,7 +805,7 @@ $
     \begin{block}{OVO: one-versus-one strategy}
     \begin{itemize}
     \item ${K \choose 2} =  K(K-1)/2$ classifiers between every pair of classes
-    \item[\doigt] majority vote rule: the class with the most votes determines the instance classification
+    \item[\doigt] majority vote rule: the class with the higher number of votes determines the instance classification
     \end{itemize}
    \end{block}
    

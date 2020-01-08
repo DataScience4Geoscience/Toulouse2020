@@ -9,8 +9,8 @@ Classification problem with $K$ classes: $Y \in \mathcal{Y}=\{1,\ldots,K\}$,
 \begin{block}{Probability of class $Y=k$ given $X=x$}  
 Bayes rule:
   \begin{align*}
- p{(Y=k|X=x)} &=  \frac{ p(x| Y=k)p{(Y=k)} } { p(x) } =
-  \frac{p(x| Y=k)p{(Y=k)} } { \sum_{j=1}^K p(x|Y=j)p{(Y=j)}  },\\  
+ p{(Y=k|X=x)} &=  \frac{ p{(Y=k)}p(x| Y=k) } { p(x) } =
+  \frac{p{(Y=k)} p(x| Y=k) } { \sum_{j=1}^K p(x|Y=j)p{(Y=j)}  },\\  
   & = \structuretext{ \frac{  \pi_k \,  p_k(x) } { \sum_{j=1}^K  \pi_j \,  p_j(x)   } }
  \end{align*}
 %\begin{block}{Problem}
@@ -88,7 +88,7 @@ e.g. \structuretext{linear/quadratic discriminant analysis}, Naïve Bayes
 \begin{block}{Estimation problem}
  These quantities must be learned on a training set:\\
  \begin{center}
-  {learning problem \alert{ $\Leftrightarrow$ estimation problem} in a parametric or not way }
+  {learning problem \alert{ $\Leftrightarrow$ estimation problem} in a parametric/non-parametric way }
  \end{center}
 
 \end{block}
@@ -225,7 +225,7 @@ is the \structuretext{discriminant function}
 \begin{frame}{QDA decision boundary}
 The boundary between two classes $k$ and $l$ is described by the equation
 \begin{align*}
-\delta_k(x)= \delta_l(x)  \Leftrightarrow \structuretext{ C_{k,l} + L_{k,l}^T x + x^T  Q_{k,l}^T x= 0}, \quad \leftarrow \textrm{\structuretext{quadratic} equation}
+\delta_k(x)= \delta_l(x)  \Leftrightarrow \structuretext{ C_{k,l} + L_{k,l}^T x + x^T  Q_{k,l}^T x= 0}, \quad \leftarrow \text{\structuretext{quadratic} equation}
 \end{align*}
 where
 \begin{itemize}
@@ -233,13 +233,13 @@ where
         C_{k,l}= { -\frac{1}{2} \log \frac{|\widehat{\Sigma}_k|}{ |\widehat{\Sigma}_l|} + \log \frac{\widehat{\pi}_k}{\widehat{\pi}_l}
         - \frac{1}{2} {\widehat{\mu}_k}^T \widehat{\Sigma}_k^{-1} \widehat{\mu}_k + \frac{1}{2}
  {\widehat{\mu}_l}^T \widehat{\Sigma}_l^{-1} \widehat{\mu}_l},
-       \end{displaystyle} \quad \leftarrow \textrm{scalar}$
+       \end{displaystyle} \quad \leftarrow \text{scalar}$
  \item $\begin{displaystyle}
           L_{k,l}= { \widehat{\Sigma}_k^{-1} \widehat{\mu}_k - \widehat{\Sigma}_l^{-1} \widehat{\mu}_l},
-        \end{displaystyle}\quad \leftarrow \textrm{vector in } \mathbb{R}^p$
+        \end{displaystyle}\quad \leftarrow \text{vector in } \mathbb{R}^p$
 \item $\begin{displaystyle}
           Q_{k,l}= { \frac{1}{2} \left( -\widehat{\Sigma}_k^{-1} + \widehat{\Sigma}_l^{-1} \right)},
-        \end{displaystyle}\quad \leftarrow \textrm{matrix in } \mathbb{R}^{p \times p}$
+        \end{displaystyle}\quad \leftarrow \text{matrix in } \mathbb{R}^{p \times p}$
 \end{itemize}
 
 \begin{itemize}
@@ -318,7 +318,7 @@ Rk:  $\frac{1}{n-K}$ is a bias correction factor for the covariance MLE (otherwi
 \begin{frame}{LDA decision boundary}
 The boundary between two classes $k$ and $l$ reduces to the equation
 \begin{align*}
-\delta_k(x)= \delta_l(x)  \Leftrightarrow \structuretext{ C_{k,l} + L_{k,l}^T x  = 0 }, \quad \leftarrow \textrm{\structuretext{linear} equation}
+\delta_k(x)= \delta_l(x)  \Leftrightarrow \structuretext{ C_{k,l} + L_{k,l}^T x  = 0 }, \quad \leftarrow \text{\structuretext{linear} equation}
 \end{align*}
 where
 \begin{itemize}
@@ -326,10 +326,10 @@ where
         C_{k,l}= {  \log \frac{\widehat{\pi}_k}{\widehat{\pi}_l}
         - \frac{1}{2} {\widehat{\mu}_k}^T \widehat{\Sigma}^{-1} \widehat{\mu}_k + \frac{1}{2}
  {\widehat{\mu}_l}^T \widehat{\Sigma}^{-1} \widehat{\mu}_l},
-       \end{displaystyle} \quad \leftarrow \textrm{scalar}$
+       \end{displaystyle} \quad \leftarrow \text{scalar}$
  \item $\begin{displaystyle}
           L_{k,l}=  \widehat{\Sigma}^{-1} \left( \widehat{\mu}_k -  \widehat{\mu}_l \right),
-        \end{displaystyle}\quad \leftarrow \textrm{vector in } \mathbb{R}^p$
+        \end{displaystyle}\quad \leftarrow \text{vector in } \mathbb{R}^p$
 \item $\begin{displaystyle}
           Q_{k,l}= \structuretext{0},
         \end{displaystyle}$

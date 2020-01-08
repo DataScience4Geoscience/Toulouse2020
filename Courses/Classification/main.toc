@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \beamer@sectionintoc {1}{Model based approaches for classification}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Bayes Classifier}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Linear/Quadratic Discriminant Analysis}{9}{0}{1}
