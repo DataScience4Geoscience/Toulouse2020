@@ -1,0 +1,46 @@
+#+BEAMER_THEME: metropolis
+#+BEAMER_COLOR_THEME: owl
+#+BEAMER_HEADER: \metroset{progressbar=frametitle,numbering=fraction,titleformat=smallcaps,block=fill,sectionpage=simple,subsectionpage=simple}
+
+#+BEAMER_HEADER: \setbeamercovered{again covered={\opaqueness<1->{25}}}
+#+BEAMER_HEADER: \author[Mathieu Fauvel]{Mathieu Fauvel}
+# #+BEAMER_HEADER: \institute[INRA]{CESBIO, Université de Toulouse, CNES, CNRS, IRD, UPS, INRA Toulouse, France}
+
+#+BEAMER_HEADER: \setbeamertemplate{title page}{
+#+BEAMER_HEADER:   \begin{minipage}[b][\paperheight]{\textwidth}
+#+BEAMER_HEADER:     \ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
+#+BEAMER_HEADER:     \vfill%
+#+BEAMER_HEADER:     \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+#+BEAMER_HEADER:     \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+#+BEAMER_HEADER:     \usebeamertemplate*{title separator}
+#+BEAMER_HEADER:     \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+#+BEAMER_HEADER:     \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+#+BEAMER_HEADER:     \ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+#+BEAMER_HEADER:     \vspace{5mm}
+#+BEAMER_HEADER:   \end{minipage}
+#+BEAMER_HEADER: }
+
+#+BEAMER_HEADER: \setbeamertemplate{footline}
+#+BEAMER_HEADER: {%
+#+BEAMER_HEADER:   \leavevmode%
+#+BEAMER_HEADER:   \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm]{author in head/foot}%  plus1fill,rightskip=.3cm
+#+BEAMER_HEADER:       \usebeamerfont{author in head/foot}\insertshortauthor~(\insertshortinstitute) : \insertshorttitle 
+#+BEAMER_HEADER:        \hfill%
+#+BEAMER_HEADER:     \end{beamercolorbox}%
+#+BEAMER_HEADER:     \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+#+BEAMER_HEADER:       \usebeamerfont{title in head/foot}\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}
+#+BEAMER_HEADER:     \end{beamercolorbox}}%
+#+BEAMER_HEADER:   \vskip0pt%
+#+BEAMER_HEADER: }
+
+#+BEAMER_HEADER: \setbeamertemplate{blocks}[rounded][shadow=false,] 
+#+BEAMER_HEADER: \setbeamersize{text margin left  = 0.5cm}
+#+BEAMER_HEADER: \setbeamersize{text margin right = 0.5cm}
+#+BEAMER_HEADER: \setbeamertemplate{itemize item}[square]
+#+BEAMER_HEADER: \setbeamertemplate{itemize subitem}[triangle]
+#+BEAMER_HEADER: \setbeamertemplate{itemize subsubitem}{$\star$}
+#+BEAMER_HEADER: \setbeamertemplate{navigation symbols}{}
+
+#+LATEX_HEADER: \usepackage{fontspec,xltxtra,xunicode}
+#+LATEX_HEADER: \defaultfontfeatures{Ligatures=TeX} \usepackage{appendixnumberbeamer}\usepackage{booktabs}
+#+LATEX_HEADER: \usepackage[type={CC}, modifier={by-sa}, version={4.0},]{doclicense} 
