@@ -1,3 +1,73 @@
-Materials for the doctoral course [[https://dsg2018.wordpress.com/][Data Science for Geosciences]]
+#+TITLE: Data Science for Geosciences
+#+SUBTITLE: Course organization
+#+AUTHOR: F. Chatelain, L. Drumetz, Mauro Dalla Mura, R. Fablet, M. Fauvel, P. Tandeo
+#+DATE: Monday 27 - Friday 31 January 2020
+#+LANGUAGE: en
+#+OPTIONS: toc:nil H:1 tags:nil
 
-Authors: F. Chatelain, L. Drumetz, Mauro Dalla Mura, R. Fablet, M. Fauvel, P. Tandeo
+#+LaTeX_CLASS_OPTIONS: [pressentation,10pt,aspectratio=1610, xcolor=table]
+#+include: conf_beamer.org
+
+* Objectives
+- Understand the theoretical basis of 
+  + data science
+  + machine learning
+  + AI
+- Implement data science algorithms and models using state-of-the-art frameworks
+- Focus on applications to geosciences through dedicated projects
+
+* Organization
+
+#+latex: \footnotesize
+#+attr_latex: :booktabs true :align cp{0.15\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.14\linewidth}p{0.13\linewidth}
+|                           | Monday                                   | Tuesday        | Wednesday     | Thursday        | Friday                        |
+|---------------------------+------------------------------------------+----------------+---------------+-----------------+-------------------------------|
+| 09h00-12h00               | Introduction \newline Data visualization | Regression     | Deep Learning | Model Selection | Project                       |
+|---------------------------+------------------------------------------+----------------+---------------+-----------------+-------------------------------|
+| \multicolumn{6}{c}{\bf Lunch} |
+|---------------------------+------------------------------------------+----------------+---------------+-----------------+-------------------------------|
+| 13h30-17h30               | Project                                  | Classification | Project       | Project         | Project \newline Presentation |
+|---------------------------+------------------------------------------+----------------+---------------+-----------------+-------------------------------|
+| 18H00-20h30               | Poster                                   | Discussion     |               |                 |                               |
+#+latex: \normalfont
+
+* Scientific Team
+- Florent Chatelain, Grenoble INP, GIPSA-lab \includegraphics[width=0.08\linewidth]{pictures/florent.png}
+- Mauro Dalla-Mura, Grenoble INP, GIPSA-lab \includegraphics[width=0.08\linewidth]{pictures/mauro.png}
+- Lucas Drumetz, IMT Atlantique, Lab-STICC \includegraphics[width=0.08\linewidth]{pictures/lucas.png}
+- Ronan Fablet, IMT Atlantique, Lab-STICC \includegraphics[width=0.08\linewidth]{pictures/ronan.jpg}
+- Mathieu Fauvel, INRAe, CESBIO 
+- Pierre Tandeo, IMT Atlantique, Lab-STICC \includegraphics[width=0.08\linewidth]{pictures/pierre.png}
+
+* Local Team
+- Mathieu Fauvel, INRAe, CESBIO \includegraphics[width=0.08\linewidth]{pictures/mathieu.jpg} 
+- Nicolas Dobigeon, Toulouse-INP, IRIT \includegraphics[width=0.08\linewidth]{pictures/nicolas.png} 
+- Emilie Bastié, CESBIO
+- Delphine Maria, CESBIO
+- Anabelle Sansus, Toulouse-INP
+
+* Practical information
+
+- Course resources: Lectures, notebook, project
+  #+begin_center
+  https://github.com/DataScience4Geoscience/Toulouse2020
+  #+end_center
+- WIFI:
+  + EDUROAM
+  + wifi-inp
+    - Login: guest\under047
+    - Pass: UbWuEY7
+- Lunch:
+  + For /students/ only: CROUS (get your certificate, by credit card only)
+  + Others: where you want/can !
+
+* Sponsors
+
+#+begin_export latex
+\begin{center}
+  \begin{tabular}{ccc}
+    \includegraphics[width=0.2\linewidth]{pictures/lefe_manu.png} & \includegraphics[width=0.2\linewidth]{pictures/logoomp_large.jpg} &                                                                                                                          \includegraphics[width=0.2\linewidth]{pictures/logosdu2e300dpi.jpg}\\
+        \includegraphics[width=0.2\linewidth]{pictures/logo_aniti.jpg} &     \includegraphics[width=0.2\linewidth]{pictures/logo_avenir.png}    
+  \end{tabular}
+\end{center}
+#+end_export
