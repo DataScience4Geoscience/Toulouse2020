@@ -66,8 +66,8 @@
 #+begin_export latex
 \begin{center}
   \begin{tabular}{ccc}
-    \includegraphics[width=0.2\linewidth]{pictures/lefe_manu.png} & \includegraphics[width=0.2\linewidth]{pictures/logoomp_large.jpg} &                                                                                                                          \includegraphics[width=0.2\linewidth]{pictures/logosdu2e300dpi.jpg}\\
-        \includegraphics[width=0.2\linewidth]{pictures/logo_aniti.jpg} &     \includegraphics[width=0.2\linewidth]{pictures/logo_avenir.png}    
+    \includegraphics[width=0.2\linewidth]{pictures/lefe_manu.png} & \includegraphics[width=0.2\linewidth]{pictures/logoomp_large.jpg} &                                                                                                                          \includegraphics[width=0.22\linewidth]{pictures/logosdu2e300dpi.jpg}\\
+        \includegraphics[width=0.2\linewidth]{pictures/logo_aniti.jpg} &     \includegraphics[width=0.2\linewidth]{pictures/logo_avenir.png}     &     \includegraphics[width=0.3\linewidth]{pictures/IUF_logotype_fond-transparent_off.png}
   \end{tabular}
 \end{center}
 #+end_export
