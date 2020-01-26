@@ -1,0 +1,35 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Descriptive Statistics}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{1}{Univariate data}{4}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{2}{Multivariate data}{10}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Outliers and Missing Values}{13}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{1}{Outliers}{14}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{2}{Missing Values}{17}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Density Estimation}{20}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{1}{Parametric density estimation}{21}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{2}{Non Parametric density estimation}{24}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{The Curse of Dimensionality}{30}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{1}{Working in High dimensions}{31}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{2}{Visualizing High dimensional data}{34}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Principal Component Analysis}{36}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{1}{Motivation}{37}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{2}{Algorithm}{38}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{3}{Examples}{43}{0}{5}
