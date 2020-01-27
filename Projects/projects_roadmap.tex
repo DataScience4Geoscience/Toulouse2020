@@ -1,0 +1,241 @@
+% Created 2020-01-27 Mon 12:06
+% Intended LaTeX compiler: pdflatex
+\documentclass[pressentation,10pt,aspectratio=1610, xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Ligatures=TeX} \usepackage{appendixnumberbeamer}\usepackage{booktabs}
+\usepackage[type={CC}, modifier={by-sa}, version={4.0},]{doclicense}
+\usetheme{metropolis}
+\usecolortheme{owl}
+\author{F. Chatelain, L. Drumetz, Mauro Dalla Mura, R. Fablet, M. Fauvel, P. Tandeo}
+\date{Monday 27 - Friday 31 January 2020}
+\title{Data Science for Geosciences}
+\subtitle{Project Session}
+\metroset{progressbar=frametitle,numbering=fraction,titleformat=smallcaps,block=fill,sectionpage=simple,subsectionpage=simple}
+\setbeamercovered{again covered={\opaqueness<1->{25}}}
+\author[Mathieu Fauvel]{Mathieu Fauvel}
+\setbeamertemplate{title page}{
+\begin{minipage}[b][\paperheight]{\textwidth}
+\ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
+\vfill%
+\ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+\ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+\usebeamertemplate*{title separator}
+\ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+\ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+\ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+\vspace{5mm}
+\end{minipage}
+}
+\setbeamertemplate{footline}
+{%
+\leavevmode%
+\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm]{author in head/foot}%  plus1fill,rightskip=.3cm
+\usebeamerfont{author in head/foot}\insertshortauthor~(\insertshortinstitute) : \insertshorttitle
+\hfill%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+\usebeamerfont{title in head/foot}\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+\setbeamertemplate{blocks}[rounded][shadow=false,]
+\setbeamersize{text margin left  = 0.5cm}
+\setbeamersize{text margin right = 0.5cm}
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subsubitem}{$\star$}
+\setbeamertemplate{navigation symbols}{}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[label={sec:orge8dc8d7}]{Project organization}
+\begin{itemize}
+\item General objectives: Practice of machine learning tools for a real application
+\begin{itemize}
+\item Statement of a given issue as a machine learning problem
+\item Implementation of a machine learning model in Python (training \& testing stage)
+\item Evaluation and benchmarking of machine learning models
+\item \textbf{Deliverable: Python notebook}
+\end{itemize}
+
+\item Organization
+\begin{itemize}
+\item 5 topics, 3 to 4 groups for each topic
+\item Group of 2/3 trainees
+\item Five project sessions
+\begin{enumerate}
+\item Monday afternoon
+\item Wednesday afternoon
+\item Thursday afternonn
+\item Friday morning
+\item Friday afternoon
+\end{enumerate}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org1d76aea}]{Topics}
+\begin{enumerate}
+\item Prediction of ENSO (El Niño-Southern Oscillation)
+\item Recognition of ocean-atmosphere events in satellite SAR images
+\item Analysis and dimensionality reduction of Sea Surface Height
+\item Automatic fish sound recognition
+\item Prediction of pollutant concentrations
+\item Land cover classification from multitemporal Sentinel-2 Data
+\end{enumerate}
+
+\begin{center}
+All projects resources available
+\url{https://github.com/DataScience4Geoscience/Toulouse2020/tree/master/Projects}
+\end{center}
+\end{frame}
+
+\begin{frame}[label={sec:orgb509b88}]{Sessions}
+\begin{itemize}
+\item Session 1
+\begin{itemize}
+\item Understanding of the targeted problem and of the associated data
+\item Exploratory analysis and visualisation of the dataset
+\item Statement of the targeted problem as a machine learning issue
+\end{itemize}
+\item Session 2
+\begin{itemize}
+\item Design of a machine learning framework for the targeted problem
+\item Selection of ML models and libraries
+\item Definition of evaluation criteria
+\item 5' pitch by each project member to other trainees
+\end{itemize}
+\item Session 3
+\begin{itemize}
+\item Design your machine learning pipeline
+\end{itemize}
+\item Session 4
+\begin{itemize}
+\item Project synthesis (Python notebook)
+\item Preparation of a joint presentation between the two groups for each project
+\end{itemize}
+\item Session 5
+\begin{itemize}
+\item Presentation of each project
+\item Synthesis: question/response session
+\item Feedbacks on the content and organization of the course
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgd12b96b}]{Prediction of ENSO (El Niño-Southern Oscillation)}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & P. Tandeo \& R. Fablet\\
+\midrule
+Data & Multivariate time series\\
+\midrule
+Problem type & Regression\\
+\midrule
+Keywords & Forecasting time series\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org93ebb97}]{Recognition of ocean-atmosphere events in satellite SAR images}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & P. Tandeo \& R. Fablet\\
+\midrule
+Data & SAR\\
+\midrule
+Problem type & Classification\\
+\midrule
+Keywords & Convolutional Neural Network\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:orge796d03}]{Analysis and dimensionality reduction of Sea Surface Height}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & L. Drumetz\\
+\midrule
+Data & Occiput data\\
+\midrule
+Problem type & Regression\\
+\midrule
+Keywords & PCA, Autoencoders\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org9ff81dd}]{Automatic fish sound recognition}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & M. Dalla Mura\\
+\midrule
+Data & Accoustic data\\
+\midrule
+Problem type & Classification\\
+\midrule
+Keywords & Feature extraction, classification\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:orgd337661}]{Prediction of pollutant concentrations}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & F. Chatelain\\
+\midrule
+Data & Multivariate time series\\
+\midrule
+Problem type & Regression \& Classification\\
+\midrule
+Keywords & Random Forest, Knn, Variable selection\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[label={sec:org00dd2e0}]{Land cover classification from multitemporal Sentinel-2 Data}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Supervisors & M. Fauvel\\
+\midrule
+Data & Satellite image time series\\
+\midrule
+Problem type & Classification\\
+\midrule
+Keywords & Feature extraction, classification\\
+ & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+\end{document}
