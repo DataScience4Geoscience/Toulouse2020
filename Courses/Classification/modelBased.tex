@@ -2,21 +2,21 @@
 
 \begin{frame}
   \frametitle{Bayes rule for classification}
-   
-   
+
+
 Classification problem with $K$ classes: $Y \in \mathcal{Y}=\{1,\ldots,K\}$,
 
-\begin{block}{Probability of class $Y=k$ given $X=x$}  
+\begin{block}{Probability of class $Y=k$ given $X=x$}
 Bayes rule:
   \begin{align*}
  p{(Y=k|X=x)} &=  \frac{ p{(Y=k)}p(x| Y=k) } { p(x) } =
-  \frac{p{(Y=k)} p(x| Y=k) } { \sum_{j=1}^K p(x|Y=j)p{(Y=j)}  },\\  
+  \frac{p{(Y=k)} p(x| Y=k) } { \sum_{j=1}^K p(x|Y=j)p{(Y=j)}  },\\
   & = \structuretext{ \frac{  \pi_k \,  p_k(x) } { \sum_{j=1}^K  \pi_j \,  p_j(x)   } }
  \end{align*}
 %\begin{block}{Problem}
  \begin{itemize}
   \item \structuretext{$p_k(x) \equiv p(x| Y=k)$} is the {\em density} for $X$ in class $k$
-  \item \structuretext{$\pi_k \equiv p{(Y=k)}$} is the {\em weight}, or {\em prior} probability of class $k$  
+  \item \structuretext{$\pi_k \equiv p{(Y=k)}$} is the {\em weight}, or {\em prior} probability of class $k$
  \end{itemize}
 \end{block}
 
@@ -25,7 +25,7 @@ Bayes rule:
 
 \begin{frame}
   \frametitle{Bayes classifier}
-  
+
   \begin{block}{Definition}
   The Bayes classification rule $f^{\ast}$ is defined as
    \structuretext{ \begin{align*}
@@ -33,13 +33,13 @@ Bayes rule:
    \end{align*} }
    \end{block}
  \begin{block}{Theorem}
- The Bayes classification rule $f^{\ast}$ is optimal in the misclassification rate sense where $\mathcal{E}[f]=p( f(X)  \ne Y)$: 
+ The Bayes classification rule $f^{\ast}$ is optimal in the misclassification rate sense where $\mathcal{E}[f]=p( f(X)  \ne Y)$:
    \structuretext{\centerline{for any rule $f$, $\mathcal{E}[f]  \ge \mathcal{E}[f^{\ast}]$,}}
  \end{block}
   \begin{block}{Remarks}
    \begin{itemize}
-    \item $f^{\ast}(X) \equiv$  {\it maximum a posteriori} (MAP) estimate
-    \item In real-word applications,  the distribution of $(X,Y)$ is unknown $\Rightarrow$ no analytical expression  of $f^{\ast}(X)$. 
+    %\item $f^{\ast}(X) \equiv$  {\it maximum a posteriori} (MAP) estimate
+    \item In real-word applications,  the distribution of $(X,Y)$ is unknown $\Rightarrow$ no analytical expression  of $f^{\ast}(X)$.
     But useful reference on academic examples.
    \end{itemize}
 
@@ -420,11 +420,13 @@ where
       \end{itemize}
 \end{block}
 
+\alert{Notebook}
+
 \begin{block}{Perspectives}
    Model free approaches: direct learning of the prediction rule $f$
 \end{block}
 
-\alert{Notebook}
+
 
 \end{frame}
 
