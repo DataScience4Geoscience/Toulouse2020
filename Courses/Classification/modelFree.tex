@@ -16,8 +16,8 @@
   \end{align*}
   where $\widehat{Y}(x) = \frac{1}{k} \sum_{X_i \in N_k(x) } Y_i$ is the average  of the binary labels of the k nearest neighbors of the testing point $X=x$.
   \end{block}
-  
-  
+
+
   \begin{block}{Multiclass problem with $k$-NN}
   The binary classification problem can be directly extended for an arbitray number of class $K$:
   \begin{align*}
@@ -72,7 +72,7 @@ Theory elaborated in the early 1990's (Vapnik {\em et al}) based on the idea of 
  \item[\doigt] classification rule is linear in a transformed space of higher (possible infinite) dimension than the original input space
 \end{itemize}
 
- 
+
 \end{frame}
 
 
@@ -86,12 +86,12 @@ Theory elaborated in the early 1990's (Vapnik {\em et al}) based on the idea of 
   \end{itemize}
   \end{block}
 
- Defining a \structuretext{linear} discriminant function $h(x)$ 
+ Defining a \structuretext{linear} discriminant function $h(x)$
  $\Leftrightarrow$ defining a separating \structuretext{hyperplane} $\mathcal{H}$ with equation\\
   \begin{minipage}{.4\textwidth}
 \begin{center}
                    $$
- \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0, 
+ \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0,
  $$
 \end{center}
 \end{minipage}
@@ -110,7 +110,7 @@ Theory elaborated in the early 1990's (Vapnik {\em et al}) based on the idea of 
  \item[\doigt] $h(x)\equiv \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0$ is the associated (linear) discriminant function
 \end{itemize}
 
- 
+
 \end{frame}
 
 
@@ -123,7 +123,7 @@ Theory elaborated in the early 1990's (Vapnik {\em et al}) based on the idea of 
   \begin{minipage}{.4\textwidth}
 \begin{center}
                    $$
- \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0, 
+ \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0,
  $$
 \end{center}
 \end{minipage}
@@ -144,7 +144,7 @@ or in an equivalent way:
 \end{align*}
 
 \begin{itemize}
- \item[Rk:] $\boldsymbol{x}$ is in class  $y \in\{-1,1\}$: prediction $G(\boldsymbol{x})$ is correct %$\Leftrightarrow$ 
+ \item[Rk:] $\boldsymbol{x}$ is in class  $y \in\{-1,1\}$: prediction $G(\boldsymbol{x})$ is correct %$\Leftrightarrow$
  iff $y \left(  \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 \right )  \ge 0$
  \end{itemize}
 
@@ -156,17 +156,17 @@ or in an equivalent way:
 
 \begin{frame}
   \frametitle{Separating Hyperplane: separable case}
-  
+
   %\begin{block}{Binary supervised classification}
 %   $X \in \mathbb{R}^p$, $Y \in \{-1,1\}$, Training set $(x_1,y_1),\ldots,(x_n,y_n)$
   %\end{block}
 
   \medskip
-  
-  \structuretext{Linear separability assumption:} 
-  $\exists \boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. the hyperplane 
-  $\boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0$ 
-  perfectly separates 
+
+  \structuretext{Linear separability assumption:}
+  $\exists \boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. the hyperplane
+  $\boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0$
+  perfectly separates
   the two classes on the training set:
   $$\begin{displaystyle}       y_k  \left(  x^T_k \boldsymbol{\beta} + \beta_0 \right) \ge 0, \quad \textrm{ for } k=1,\ldots,n,
   \end{displaystyle}$$
@@ -188,13 +188,13 @@ or in an equivalent way:
 
 \begin{frame}
    \frametitle{Maximum margin separating hyperplane (separable case)}
-   
-   
-%    Distance of a point $\boldsymbol{x_k}$ to an hyperplane  $\mathcal{H}$ s.t. $\boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0$, 
-%    $$d(x_k,\mathcal{H}) \equiv \min_{\boldsymbol{x}} \left\{ \| \boldsymbol{x} - \boldsymbol{x}_k \| \ : \ 
+
+
+%    Distance of a point $\boldsymbol{x_k}$ to an hyperplane  $\mathcal{H}$ s.t. $\boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0$,
+%    $$d(x_k,\mathcal{H}) \equiv \min_{\boldsymbol{x}} \left\{ \| \boldsymbol{x} - \boldsymbol{x}_k \| \ : \
 %     \boldsymbol{x}^T \boldsymbol{\beta} + \beta_0 = 0 \right\}$$
 
-   
+
    \begin{block}{Maximum margin principle}
    We are interested in the 'optimal' perfect separating hyperplane maximizing the distance $\structuretext{M}>0$, called the \structuretext{margin},
    between the separating hyperplane and the training data, i.e. with the biggest gap
@@ -210,21 +210,21 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
     $$
       \structuretext{M}= \min_{1\le k \le n} \left\{ d(x_k,\mathcal{H}) \right\}
     $$
-    is \structuretext{maximized}. Subject to 
+    is \structuretext{maximized}. Subject to
    $$\begin{displaystyle}       y_k  \left(  x^T_k \boldsymbol{\beta} + \beta_0 \right) \ge 0, \quad \text{ for } k=1,\ldots,n,
   \end{displaystyle}$$
 
-   \end{minipage} 
+   \end{minipage}
 
-  \end{frame}    
-%   
-%   
+  \end{frame}
+%
+%
 %   \begin{frame}
 %    \frametitle{Signed distance}
 %    \medskip
-%    
+%
 %   \begin{minipage}{.65\textwidth}
-%   From the orthogonality principle, 
+%   From the orthogonality principle,
 %   $$d(x_0,\mathcal{H})=\left\|  \boldsymbol{x}_0 - \widehat{\boldsymbol{x}}_0 \right\|,$$
 %   where $\widehat{\boldsymbol{x}}_0$ is the orthogonal projection of $\boldsymbol{x}_0$ on $\mathcal{H}$
 % \end{minipage}
@@ -239,31 +239,31 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %   \item[$\Rightarrow$] $\boldsymbol{x}_0 - \widehat{\boldsymbol{x}}_0$ and  $\boldsymbol{\beta}$ are collinear,
 %    \item[$\Rightarrow$] $\boldsymbol{x}_0 - \widehat{\boldsymbol{x}}_0= \underbrace{\langle \bx_0 - \widehat{\bx}_0, \bbeta^{*} \rangle}_{\textrm{signed distance}} \bbeta^{*}$, where $ \bbeta^{*}= \frac{\bbeta}{\|\bbeta\|}$, %and $\widehat{\bx}_0^T\boldsymbol{\beta} + \beta_0=0$ since $\widehat{\bx}_0 \in \mathcal{H}$
 %     \item[$\Rightarrow$] $\begin{displaystyle}
-%     \textrm{\structuretext{signed distance} }= \left( \bx_0 - \widehat{\bx}_0\right)^T \frac{\bbeta}{\|\bbeta\|}= 
-%     \frac{\bx_0^T \bbeta - \widehat{\bx}_0^T \bbeta}{\|\bbeta\|}= \structuretext{\frac{\bx_0^T \bbeta +\beta_0}{\|\bbeta\|}},\end{displaystyle}$ 
+%     \textrm{\structuretext{signed distance} }= \left( \bx_0 - \widehat{\bx}_0\right)^T \frac{\bbeta}{\|\bbeta\|}=
+%     \frac{\bx_0^T \bbeta - \widehat{\bx}_0^T \bbeta}{\|\bbeta\|}= \structuretext{\frac{\bx_0^T \bbeta +\beta_0}{\|\bbeta\|}},\end{displaystyle}$
 %  \end{itemize}
 % \begin{block}{Remarks}
 %   \begin{itemize}
 %  %\item the last equality comes from $\widehat{\bx}_0 \in \mathcal{H}$
-%     \item %$\langle \bx_0 - \widehat{\bx}_0, \bbeta^{*} \rangle\ge 0$ iff $\bx_0 - \widehat{\bx}_0$ and $\bbeta$ have same orientations, and  
+%     \item %$\langle \bx_0 - \widehat{\bx}_0, \bbeta^{*} \rangle\ge 0$ iff $\bx_0 - \widehat{\bx}_0$ and $\bbeta$ have same orientations, and
 %     $|\langle \bx_0 - \widehat{\bx}_0, \bbeta^{*} \rangle|= \| \bx_0 - \widehat{\bx}_0 \|= d(\bx_0,\mathcal{H}) \leftarrow$  ``signed distance''
-%     \item for any perfect separating hyperplane $y_k \langle \bx_k - \widehat{\bx}_k, \bbeta^{*} \rangle= \frac{1}{\|\bbeta\|} y_k ( \bx_k^T \bbeta +\beta_0)  \ge 0$, for $k=1,\ldots,n$, 
+%     \item for any perfect separating hyperplane $y_k \langle \bx_k - \widehat{\bx}_k, \bbeta^{*} \rangle= \frac{1}{\|\bbeta\|} y_k ( \bx_k^T \bbeta +\beta_0)  \ge 0$, for $k=1,\ldots,n$,
 %  \end{itemize}
 %      \end{block}
-%   \end{frame}    
-%   
-%   
+%   \end{frame}
+%
+%
 %     \begin{frame}
 %    \frametitle{Canonical separating hyperplane}
-% 
+%
 %    For any perfect separating hyperplane, for  $k=1,\ldots,n$
-%    $$y_k \langle \bx_k - \widehat{\bx}_k, \bbeta^{*} \rangle= d(x_k,\mathcal{H})$$ 
-%    Hence, the 
+%    $$y_k \langle \bx_k - \widehat{\bx}_k, \bbeta^{*} \rangle= d(x_k,\mathcal{H})$$
+%    Hence, the
 %    margin reads
 %    $$
 %    M \equiv \min_{1\le k\le n} \left\{  d(x_k,\mathcal{H}) \right\} =  \frac{1}{\| \bbeta \| } \min_{1\le k\le n} \left\{ y_k ( \bx_k^T \bbeta +\beta_0)  \right\}
 %    $$
-%    
+%
 %    \begin{block}{Remarks}
 %     \begin{itemize}
 %      \item The bound $M$ is reached (min of a countable set),
@@ -274,14 +274,14 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %  $\bbeta$ and $\beta_0$ are normalized s.t.
 %      $$
 %      y_{\textrm{margin}} ( \bx_{\textrm{margin}}^T \bbeta +\beta_0) =1, \quad
-%    \textrm{thus } 
+%    \textrm{thus }
 %      \structuretext{M=\frac{1}{\| \bbeta \|}}
 %      $$
 %    \end{block}
-% \end{frame}  
+% \end{frame}
 
-% 
-%   
+%
+%
 % \begin{frame}
 %    \frametitle{Optimization problem (separable case)}
 %    \begin{minipage}{.6\textwidth}
@@ -290,37 +290,37 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %    \end{center}
 %    \end{minipage}
 %  \begin{minipage}{.39\textwidth}
-%    
+%
 %    %\begin{block}{Primal optimization problem}
 %    $$\left\{ \begin{array}{lc}
 %     \max_{\bbeta,\beta_0}    & M,\\
-%     \textrm{subject to } &y_k \left( \bx_k^T \bbeta + \beta_0 \right) \ge 1,\\ & \textrm{ for } 1 \le k \le n. 
+%     \textrm{subject to } &y_k \left( \bx_k^T \bbeta + \beta_0 \right) \ge 1,\\ & \textrm{ for } 1 \le k \le n.
 %    \end{array}\right. $$
 %    \end{minipage}
-%    
+%
 % \begin{itemize}
 %  \item can be recast as a quadratic criterion + linear inequality  constraints
 %  \item[\doigt] simple convex optimization problem for which standard numerical procedure are available
-%    \item[\doigtr] the only \alert{inputs used to construct the maximum margin hyperplane} are the  \alert{support vectors}  
+%    \item[\doigtr] the only \alert{inputs used to construct the maximum margin hyperplane} are the  \alert{support vectors}
 %  \end{itemize}
-% 
+%
 %     %Minimizing $\begin{displaystyle} \frac{1}{2} \|\bbeta\|^2 \end{displaystyle}$\\
 %  %  \end{block}
-% 
-% 
-% \end{frame}  
-% 
+%
+%
+% \end{frame}
+%
 % \begin{frame}
 %    \frametitle{Lagrangian (separable case)}
-%    
+%
 %    Convex constraints of positivity $\Rightarrow$ introduction of the Lagrange multipliers
 %    \begin{block}{Lagrangian}
-%     $$ L(\bbeta,\beta_0,\balpha) = \frac{1}{2} \|\bbeta\|^2 - \sum_{i=1}^n \alpha_i 
+%     $$ L(\bbeta,\beta_0,\balpha) = \frac{1}{2} \|\bbeta\|^2 - \sum_{i=1}^n \alpha_i
 %     \underbrace{\left[ y_i ( \bx_i^T \bbeta + \beta_0 )-1\right]}_{\ge 0},$$
 %     where $\alpha_i$ are the Lagrange multipliers
 %    \end{block}
-% 
-%    
+%
+%
 %    \begin{block}{First order Kuhn-Tucker necessary conditions}
 %    Setting the partial derivatives w.r.t. $\bbeta$ and $\beta_0$ to zero yields
 %    $$\left\{ \begin{array}{ll}
@@ -330,40 +330,40 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %     \begin{itemize}
 %      \item plugging these expression in the Lagrangian yields the dual expression
 %     \end{itemize}
-% 
+%
 %    \end{block}
-% 
-% 
-% \end{frame}  
-% 
-% 
+%
+%
+% \end{frame}
+%
+%
 % \begin{frame}
 %    \frametitle{Dual problem (separable case)}
-%    
-%    
+%
+%
 %       \begin{block}{Dual optimization problem}
 %    $$\left\{ \begin{array}{lc}
-%     \max_{\balpha}    & \widetilde{L}(\balpha)  =  \sum_{i=1}^n \alpha_i  - \frac{1}{2}   \sum_{i,j=1}^n \alpha_i \alpha_j y_i y_j 
+%     \max_{\balpha}    & \widetilde{L}(\balpha)  =  \sum_{i=1}^n \alpha_i  - \frac{1}{2}   \sum_{i,j=1}^n \alpha_i \alpha_j y_i y_j
 %     \bx_i^T \bx_j,\\
-%     \textrm{subject to } & \alpha_i \ge 0 \textrm{ and } \sum_{i=1}^n \alpha_i y_i= 0. 
+%     \textrm{subject to } & \alpha_i \ge 0 \textrm{ and } \sum_{i=1}^n \alpha_i y_i= 0.
 %    \end{array}\right. $$
-% 
+%
 % \begin{itemize}
 %  \item[\doigt]  simple convex optimization problem for which standard numerical procedure are available
 %  \item[\doigt] calculation of the optimum multipliers $\widehat{\alpha}_i$
 % \end{itemize}
 %    \end{block}
-% 
-% 
-% 
-% \end{frame}  
-% 
-% 
+%
+%
+%
+% \end{frame}
+%
+%
 % \begin{frame}
 %    \frametitle{Support vectors and  maximum margin hyperplane (separable case)}
-%    
-% 
-% 
+%
+%
+%
 %    \begin{block}{Complementary slackness Kuhn-Tucker necessary conditions}  % \vspace{-2.5mm}
 %    $$\widehat{\alpha}_i [ y_i h(\bx_i) -1]=0 \quad \Rightarrow \quad \structuretext{ \widehat{\alpha}_i=0  \ \textrm{  as  } \ y_i h(\bx_i) >1}$$
 %   %\vspace{-4mm}
@@ -371,7 +371,7 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %  \item since  $\widehat{\bbeta} = \sum_{i=1}^n \widehat{\alpha}_i y_i \bx_i$,  $\widehat{\bbeta}$ depends only on the points at the margin $\leftarrow$ \structuretext{support vectors}
 %  \item $\widehat{\beta}_0$ can be derived from the  complementary slackness expression for any of support vectors $\bx_{\textrm{margin}}$
 %  $$\begin{array}{lll}
-%      y_{\textrm{margin}} h( \bx_{\textrm{margin}} ) - 1  = 0& 
+%      y_{\textrm{margin}} h( \bx_{\textrm{margin}} ) - 1  = 0&
 %      \Rightarrow & \widehat{\bbeta}^T \bx_{\textrm{margin}} + \widehat{\beta}_0 = y_{\textrm{margin}},\\
 %      & \Rightarrow & \widehat{\beta}_0 = -\widehat{\bbeta}^T \bx_{\textrm{margin}} +  y_{\textrm{margin}}
 %    \end{array}$$
@@ -379,31 +379,31 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %  $$h(\bx)= \sum_{i=1}^n \widehat{\alpha}_i y_i (\bx- \bx_{\textrm{margin}})^T \bx_i +  y_{\textrm{margin}}$$
 %  \end{itemize}
 %   \end{block}
-% 
-% 
-% \end{frame}  
-%     
-%     
-%     
+%
+%
+% \end{frame}
+%
+%
+%
 %   \begin{frame}
-%    \frametitle{Maximum margin separating hyperplane (separable case)}  
-%       
+%    \frametitle{Maximum margin separating hyperplane (separable case)}
+%
 %        \begin{block}{Separable case}
 %       \begin{itemize}
-%       \item[\doigt] Maximizing the  {\em margin} $M$ between the 
+%       \item[\doigt] Maximizing the  {\em margin} $M$ between the
 %       separating hyperplane and the training data:
 %       %$ y_i(\boldsymbol{x_i}^T \boldsymbol{\beta} + \beta_0) \ge M$
 %       \end{itemize}
 %     \end{block}
-% 
+%
 %    \begin{center}
 %       \includegraphics[width=.7\textwidth]{svm_margins_ann_en.pdf}
 %    \end{center}
 %    \begin{itemize}
-%      \item[\doigtr] the only \alert{inputs used to construct the maximum margin hyperplane} are the 
+%      \item[\doigtr] the only \alert{inputs used to construct the maximum margin hyperplane} are the
 %      \alert{support vectors} and the discriminant function
 %    \end{itemize}
-% 
+%
 % \end{frame}
 
 %\section{Nonseparable case}
@@ -436,11 +436,11 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
          y_i(\boldsymbol{x_i}^T \boldsymbol{\beta} + \beta_0) & \ge (1-\xi_i)
       \end{align*}
       Support vectors include now the wrong classified points, and the points inside the margins ($\xi_i > 0$)
-     \item Primal problem: adding a constraint on the $\xi_i$'s 
+     \item Primal problem: adding a constraint on the $\xi_i$'s
      $$\left\{ \begin{array}{ll}
        \max_{\bbeta,\beta_0,\xi} & M,\\
        \textrm{subject to } &   y_i(\boldsymbol{x_i}^T \boldsymbol{\beta} + \beta_0)  \ge 1 \alert{-\xi_i}, \\
-       & \sum_{i=1}^n \xi_i \le C.
+       & C\, \sum_{i=1}^n \xi_i \le 1.
       \end{array} \right.$$
       where $C>0$ is the ``cost'' parameter
       \end{itemize}
@@ -463,38 +463,38 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
 %        \end{itemize}
 %        %\item $\xi_i^* = M \xi_i \leftarrow$ distance between a support vector and the margin
 %     \end{block}
-%     
+%
 %     \begin{block}{Choosing the cost parameter $C>0$}
 %      \begin{itemize}
 %          \item the optimal $C$ can be estimated by cross validation
 %          \item[\doigt] performance might not be very sensitive to choices of $C$ (because of the rigidity of a linear boundary)
 % 	 \item[\doigt] usually $C\approx 1$ yields a good trade-off
-%        \end{itemize}  
+%        \end{itemize}
 %     \end{block}
-% 
-% 
+%
+%
 % \end{frame}
-% 
+%
 % \begin{frame}
 %    \frametitle{Dual problem (nonseparable case)}
-%    
+%
 %    Introducing the Lagrangian and substituting the first order KT conditions w.r.t. $\bbeta$, $\beta_0$, $\bxi$
 %    yields the dual expression
 %     \begin{block}{Dual optimization problem}
 %    $$\left\{ \begin{array}{lc}
-%     \max_{\balpha}    & \widetilde{L}(\balpha)  =  \sum_{i=1}^n \alpha_i  - \frac{1}{2}   \sum_{i,j=1}^n \alpha_i \alpha_j y_i y_j 
+%     \max_{\balpha}    & \widetilde{L}(\balpha)  =  \sum_{i=1}^n \alpha_i  - \frac{1}{2}   \sum_{i,j=1}^n \alpha_i \alpha_j y_i y_j
 %     \bx_i^T \bx_j,\\
-%     \textrm{subject to } & 0 \le  \alpha_i \alert{\le C} \textrm{ and } \sum_{i=1}^n \alpha_i y_i= 0. 
+%     \textrm{subject to } & 0 \le  \alpha_i \alert{\le C} \textrm{ and } \sum_{i=1}^n \alpha_i y_i= 0.
 %    \end{array}\right. $$
-% 
+%
 % \begin{itemize}
 %  \item[\doigt] only difference w.r.t the separable case: $\alpha_i \alert{\le C}$ constraint!
 %  \item[\doigt]  simple convex optimization problem for which standard numerical procedure are available
 % \end{itemize}
 %  \end{block}
-%  
+%
 % \end{frame}
-% 
+%
 
 \begin{frame}
    \frametitle{Optimal separating hyperplane}
@@ -603,7 +603,7 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
       \mathbf{x}          & \mapsto   \phi(\mathbf{x})\\
       (\mathbf{x}_1,\mathbf{x}_2)           & \mapsto  (\mathbf{x}_1^2,\mathbf{x}^2_2,\sqrt{2}\mathbf{x}_1\mathbf{x}_2)
     \end{align*}
-    
+
   \item  In \(\mathbb{R}^3\), the inner product can be expressed as
     \begin{align*}
       \langle \phi(\mathbf{x}),\phi(\mathbf{x}')\rangle_{\mathbb{R}^3}&=   \sum_{\scriptscriptstyle i=1}^{\scriptscriptstyle 3}\phi(\mathbf{x})_i\phi(\mathbf{x}')_i \\
@@ -614,7 +614,7 @@ Find  $\boldsymbol{\beta}  \in \mathbb{R}^p$ and $\beta_0 \in \mathbb{R}$ s.t. t
                                                                       &= k(\mathbf{x},\mathbf{x}').\\
       \end{align*}
       \end{itemize}
-      
+
 \end{frame}
 
 
@@ -638,21 +638,21 @@ Nonlinear separation in the input space}
 
 \begin{frame}
   \frametitle{Kernel trick}
-  
-The SVM solution depends only on the \structuretext{inner product} between the input features $\phi(\bx)$ and the support vectors 
+
+The SVM solution depends only on the \structuretext{inner product} between the input features $\phi(\bx)$ and the support vectors
   $\phi(\bx_{\textrm{margin}})$
-  
+
   \begin{block}{Kernel trick}
   Use of  a kernel function $k$ associated with an expansion/feature map $\phi$:
-  $$\begin{array}{ccll} k:& \mathbb{R}^p \times \mathbb{R}^p  &\rightarrow& \mathbb{R}\\ 
+  $$\begin{array}{ccll} k:& \mathbb{R}^p \times \mathbb{R}^p  &\rightarrow& \mathbb{R}\\
               & (\bx,\bx') &\mapsto& \structuretext{ k (\bx,\bx') \equiv \langle \phi(\bx), \phi(\bx') \rangle}
              \end{array}$$
   %and the separating hyperplane reads $h(\bx)= \sum_{i=1}^n \widehat{\alpha}_i y_i k(\bx_i,\bx)+ \widehat{\beta}_0$
   \end{block}
- 
+
  \begin{block}{Advantages}
   \begin{itemize}
-   \item Computations are performed in the original input space: less  expansive than in a high 
+   \item Computations are performed in the original input space: less  expansive than in a high
    dimensional transformed space $\mathcal{F}$
    \item Explicit representations of the feature map $\phi$ and enlarged feature space $\mathcal{F}$ are not necessary, the only expression of $k$
    is required!
@@ -734,7 +734,7 @@ $
 
 \begin{frame}
   \frametitle{Application: binary data  (cf introduction course)}
-  
+
   \begin{block}{Linear kernel}
     \begin{center}
       \includegraphics[trim=0 30 0 0,clip,width=.45\textwidth, ]{exempleBin_lin1.jpg}%\\
@@ -752,14 +752,14 @@ $
       \includegraphics[width=.45\textwidth]{exempleBin_poly4.jpg}\\
       % \color{blue}{$C \approx 1$}
     \end{center}
-    
+
   \end{block}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Application: binary data}
-  
+
   \begin{block}{Gaussian radial kernel ($\gamma=1$)}
     \begin{center}
       \includegraphics[width=.45\textwidth]{exempleBin_rad.jpg}\\
@@ -784,7 +784,7 @@ $
     \end{eqnarray*}
   \item \textcolor{red}{Notebook}
   \end{itemize}
-  
+
 \end{frame}
 
 %\section{Multiclass SVM}
@@ -800,20 +800,20 @@ $
     \item[\doigt]  classifier with the highest confidence value (e.g. the maximum distance to the separator hyperplane) assigns the class
     \end{itemize}
    \end{block}
-   
-   
+
+
     \begin{block}{OVO: one-versus-one strategy}
     \begin{itemize}
     \item ${K \choose 2} =  K(K-1)/2$ classifiers between every pair of classes
     \item[\doigt] majority vote rule: the class with the higher number of votes determines the instance classification
     \end{itemize}
    \end{block}
-   
+
    Which to choose? if $K$ is not too large, choose OVO
 
   \end{frame}
-  
-  
+
+
   \subsection{Random Forests}
   \begin{frame}{Introduction}
     \begin{itemize}
@@ -827,12 +827,12 @@ $
   \begin{frame}{Decision trees}
     \begin{center}
       \only<1>
-      {				
+      {
         \includegraphics[width=0.45\textwidth]{tikz_rf_dyadique}
         \includegraphics[width=0.45\textwidth]{tikz_rftree_coupure_etape1}
       }
       \only<2>
-      {				
+      {
         \includegraphics[width=0.45\textwidth]{tikz_rf_dyadique_coupure_etape1}
         \includegraphics[width=0.45\textwidth]{tikz_rftree_coupure_etape1}
       }
@@ -862,14 +862,14 @@ $
         \end{itemize}
       \end{itemize}
     \end{itemize}
-    
+
     \begin{columns}
       \column{0.33\textwidth}
       \includegraphics[width=0.95\textwidth]{tikz_rf_outScore_6red.pdf}
-      
+
       \column{0.33\textwidth}
       \includegraphics[width=0.95\textwidth]{tikz_rf_outScore_3red.pdf}
-      
+
       \column{0.33\textwidth}
       \includegraphics[width=0.95\textwidth]{tikz_rf_outScore_7red.pdf}
     \end{columns}
@@ -880,38 +880,38 @@ $
     \includegraphics[width=0.55\textwidth]{ex_rf.pdf}
   \end{center}
   \end{frame}
-  
+
   %\section{Conclusions}
   \begin{frame}
   \frametitle{Conclusions on 'Black Box' approaches}
-  
+
    \begin{block}{k-NN}
    \begin{itemize}
-    \item non-parametric method which does not rely on a fixed model 
+    \item non-parametric method which does not rely on a fixed model
     \item algorithm which is conceptually  among the simplest of all machine learning algorithms
     \item badly behaved procedure in high dimension: dimension reduction, e.g. PCA, is usually performed prior to k-NN algorithm in order to avoid curse of dimensionality and to reduce computational complexity of the classification rule
    \end{itemize}
 
-    
+
    \end{block}
 
-  
+
   \begin{block}{SVM}
   \begin{itemize}
    \item maximum margin learning criterion $\leftarrow$ model free
    \item classification algorithm nonlinear in the original input space by performing an implicit linear classification
    in a higher dimensional space
    \item sparse solutions characterized by the support vectors
-   \item popular algorithms, with a large literature 
+   \item popular algorithms, with a large literature
     \end{itemize}
- \end{block} 
+ \end{block}
 
 \end{frame}
 
 
   \begin{frame}
   \frametitle{Conclusions on 'Black Box' approaches (Cont'd)}
-    
+
    \begin{block}{ Random Forests}
    \begin{itemize}
     \item involve decision tree to split the prediction space in simple regions
@@ -920,15 +920,15 @@ $
    \end{itemize}
    \end{block}
 
-  
+
   \begin{block}{Deep Neural Nets}
   \begin{itemize}
-   \item Neural Nets with multiple hidden layers between input and output ones   
+   \item Neural Nets with multiple hidden layers between input and output ones
    \item many variants of deep architectures (Recurrent, Convolutional,...)  used in specific domains (speech, vision, ...)
    \item[\doigt] supported by empirical evidence
    \item[\doigt] dramatic performance jump for several big data applications
     \end{itemize}
- \end{block} 
+ \end{block}
 
  \alert{Notebook}
 \end{frame}
